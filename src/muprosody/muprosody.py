@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 from glob import glob
+import logging
 
 
 def run_myspsolution_praat_file(audio_file: str):
@@ -30,7 +31,7 @@ def run_myspsolution_praat_file(audio_file: str):
     )
 
     # This will print the info from the sound object, and objects[0] is a parselmouth.Sound object
-    print(objects[0])
+    logging.debug("parselmouth.Sound response", objects[0])
 
     result = dict(
         zip(
@@ -96,7 +97,6 @@ def run_mltrnl_praat_file(audio_file: str):
         capture_output=True,
     )
 
-    # This will print the info from the textgrid object, and objects[1] is a parselmouth.Data object with a TextGrid inside
     result = dict(
         zip(
             [

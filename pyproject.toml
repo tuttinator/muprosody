@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "muprosody"
+version = "0.1.0"
+description = ""
+authors = ["Caleb Tutty <github@calebtutty.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+praat-parselmouth = "^0.4.3"
+onnxruntime = "^1.16.1"
+pandas = ">=1.0.0"
+numpy = ">=1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

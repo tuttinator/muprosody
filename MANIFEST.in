@@ -1,0 +1,23 @@
+# FILEPATH: /Users/caleb/Projects/edukita/muprosody/MANIFEST.in
+
+# Include the README file
+include README.md
+
+# Include the license file
+include LICENSE
+
+# Include all Python source files
+recursive-include src *.py
+
+# Include all praat files
+recursive-include src *.praat
+
+# Include all onnx files
+recursive-include src *.onnx
+
+# Include all data files
+recursive-include data *
+
+# Exclude all compiled Python files
+global-exclude *.pyc
+global-exclude *.pyo
